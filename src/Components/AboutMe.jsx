@@ -9,9 +9,9 @@ const AboutMe = () => {
                 <div>
                     <h1 className='font-semibold text-4xl pb-8 md:pb-14'>About Me</h1>
                 </div>
-                <div className='grid grid-rows-1 gap-7 md:grid-cols-2 md:gap-20 px-12 justify-center items-center pb-11'>
-                    <div className='h-[500px] w-[400px] bg-black'></div>
-                    <div>
+                <div className='grid grid-rows-1 gap-7 md:grid-cols-2 md:gap-20 px-12 mx-6 justify-center items-center pb-11'>
+                    <div className='h-[400px] w-[350px] bg-black mx-10'></div>
+                    <div className='mx-10 '>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis qui nesciunt accusamus velit saepe voluptates asperiores reprehenderit natus excepturi eum praesentium officia cumque aspernatur ipsa possimus at omnis facilis, nihil est magnam, quod necessitatibus corrupti molestiae. Expedita omnis vero non?</p>
 
                         <div className=" flex items-center py-2 gap-4">

@@ -22,10 +22,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='flex lg:flex-row flex-wrap justify-center lg:px-0 items-center gap-10  pt-28 pb-10'>
-                    <div className='h-[170px] box-1 text-lightText hover:text-white w-[350px] rounded-xl px-4 py-6'>
+                <div className='flex mx-8 lg:flex-row flex-wrap justify-center lg:px-0 items-center gap-10  pt-28 pb-10'>
+                    <div className='h-[170px] box-1 text-lightText hover:text-white md:w-[350px] rounded-xl px-4 py-6'>
                         <div className='flex'>
-                            <CountUp className='md:text-7xl text-2xl text-brightColor font-bold block text-white' end={4} duration={7} />
+                            <CountUp className='md:text-7xl text-5xl text-brightColor font-bold block text-white' end={4} duration={7} />
                             {/* <p className='flex justify-end items-end text-5xl font-bold'>+</p> */}
                             <p className='flex items-end font-bold text-2xl text-white'>Year</p>
                         </div>
@@ -35,9 +35,9 @@ const Home = () => {
                             </h1>
                         </div>
                     </div>
-                    <div className='h-[170px] box-2 text-lightText hover:text-white w-[350px] rounded-xl px-4 py-7'>
+                    <div className='h-[170px] box-2 text-lightText hover:text-white md:w-[350px] rounded-xl px-4 py-7'>
                         <div className='flex'>
-                            <CountUp className='md:text-7xl text-2xl text-white font-bold block' end={6} duration={6} />
+                            <CountUp className='md:text-7xl text-5xl text-white font-bold block' end={6} duration={6} />
                             <p className='flex justify-end items-end text-4xl font-bold text-white'>+</p>
                             <p className='flex items-end font-bold text-2xl text-white'>Projects</p>
                         </div>
@@ -47,9 +47,9 @@ const Home = () => {
                             </h1>
                         </div>
                     </div>
-                    <div className='h-[170px] box-3 text-lightText hover:text-white w-[350px] rounded-xl px-4 py-6'>
+                    <div className='h-[170px] box-3 text-lightText hover:text-white md:w-[350px] rounded-xl px-4 py-6'>
                         <div className='flex'>
-                            <CountUp className='md:text-7xl text-2xl text-white font-bold block' end={200} duration={5} />
+                            <CountUp className='md:text-7xl text-5xl text-white font-bold block' end={200} duration={5} />
                             <p className='flex justify-end items-end text-4xl font-bold text-white'>+</p>
                             <p className='flex items-end font-bold text-2xl text-white'>Commits</p>
                         </div>
