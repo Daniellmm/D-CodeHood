@@ -3,7 +3,9 @@ import './App.css'
 import AboutMe from './Components/AboutMe'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
+import Services from './Components/Services'
 import Skills from './Components/Skills'
+import Testing from './Components/testing'
 
 function App() {
 
@@ -24,6 +26,14 @@ function App() {
           <Skills />
         </div>
 
+
+        <div>
+          <Services />
+        </div>
+
+        <div>
+          <Testing />
+        </div>
 
       </main>
     </div>

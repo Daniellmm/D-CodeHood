@@ -15,14 +15,14 @@ const Home = () => {
                 </div>
                 <div className='flex md:flex-row flex-col gap-7 pt-10'>
                     <div>
-                        <button className='md:p-3 py-2 px-4 rounded-full bg-slate-100 font-semibold'>View Projects</button>
+                        <button className='btn-1 md:p-3 py-2 px-4 rounded-full bg-slate-100 font-semibold'>View Projects</button>
                     </div>
                     <div>
-                        <button className='md:p-3 py-2 px-5 rounded-full bg-slate-100 font-semibold'>Our services</button>
+                        <button className='btn-2 md:p-3 py-2 px-5 rounded-full bg-slate-100 font-semibold'>Our services</button>
                     </div>
                 </div>
 
-                <div className='flex mx-8 lg:flex-row flex-wrap justify-center lg:px-0 items-center gap-10  pt-28 pb-10'>
+                <div className='flex mx-8 md:mx-0 lg:flex-row flex-wrap justify-center lg:px-0 items-center gap-10  pt-28 pb-10'>
                     <div className='h-[170px] box-1 text-lightText hover:text-white md:w-[350px] rounded-xl px-4 py-6'>
                         <div className='flex'>
                             <CountUp className='md:text-7xl text-5xl text-brightColor font-bold block text-white' end={4} duration={7} />

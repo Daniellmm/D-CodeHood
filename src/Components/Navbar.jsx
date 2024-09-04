@@ -19,9 +19,9 @@ const Navbar = () => {
            
 
             <div className="flex justify-between items-center p-4 px-7 md:px-32 text-white">
-                <h1 className="text-xl font-bold  mix-blend-difference ">D-CodeHood</h1>
+                <h1 className="btn-1 p-1 rounded-md text-xl font-bold  mix-blend-difference ">D-CodeHood</h1>
 
-                <div className="flex items-center mix-blend-difference">
+                <div className="flex items-center btn-1 p-1 rounded-md mix-blend-difference">
                     {menu ? (
                         <AiOutlineClose size={25} onClick={handleChange} />
                     ) : (
@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className={`${menu ? "translate-x-0" : "-translate-x-full"} -inset-0 -z-50 justify-center items-center translate-y-10 flex flex-col lg:flex-col bg-black text-white font-semibold fixed lg:static left-0 top-20  px-5 text-left pt-8 pb-8 lg:pt-5 lg:pb-5 gap-8 w-full h-fit transition-transform duration-300 `}>
+            <div className={`${menu ? "translate-x-0" : "-translate-x-full"} -inset-0 -z-10 justify-center items-center translate-y-10 flex flex-col lg:flex-col bg-black text-white font-semibold fixed lg:static left-0 top-20  px-5 text-left pt-8 pb-8 lg:pt-5 lg:pb-5 gap-8 w-full h-fit transition-transform duration-300 `}>
                 <Link
                     to="home"
                     spy={true}
