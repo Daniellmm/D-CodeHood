@@ -16,10 +16,10 @@ const AboutMe = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis qui nesciunt accusamus velit saepe voluptates asperiores reprehenderit natus excepturi eum praesentium officia cumque aspernatur ipsa possimus at omnis facilis, nihil est magnam, quod necessitatibus corrupti molestiae. Expedita omnis vero non?</p>
 
                         <div className=" flex items-center py-2 gap-4">
-                            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <a href="/" target="_blank" rel="noopener noreferrer">
                                 <FaGithub className='hover:text-box2' size={20} />
                             </a>
-                            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <a href="/" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram className='hover:text-box2' size={20} />
                             </a>
 

@@ -5,6 +5,7 @@ import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Services from './Components/Services'
 import Skills from './Components/Skills'
+import Testimonials from './Components/Testimonials'
 import Testing from './Components/testing'
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
 
         <div>
           <Testing />
+        </div>
+
+        <div>
+          <Testimonials />
         </div>
 
       </main>

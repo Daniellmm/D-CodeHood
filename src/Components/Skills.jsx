@@ -10,6 +10,7 @@ import dart from "../assets/2.png"
 import expressjs from "../assets/10.png"
 import flutter from "../assets/1.png"
 import git from "../assets/5.png"
+import {motion} from 'framer-motion'
 
 
 const Skills = () => {
@@ -69,24 +70,27 @@ const Skills = () => {
 
                     <div className='flex md:flex-wrap gap-x-2 md:gap-x-10 ml-3 mr-3 justify-center '>
                         {skillsData.map((skill, index) => (
-                            <div
+                            <motion.div
+                                whileTap={{scale: 0.6}}
+                                whileHover={{scale: 1.1}}
+                                transition={{bounceDamping: 10, bounceStiffness: 600}}
                                 key={index}
                                 className={`bg-[#444342] mt-12 flex justify-center hover:bg-textblue items-center bg-opacity text-[12px] md:text-[17px] bg-clip-padding blur-backdrop-filter p-1 md:p-3 rounded-md text-white border border-white/30 cursor-pointer ${selectedSkill === skill.name ? 'bg-textblue text-white font-semibold  border-2 border-white/50' : ''}`}
                                 onClick={() => handleSkillClick(skill.name)}
                             >
                                 <h1>{skill.name}</h1>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
 
 
-                    <div className='mt-10 flex flex-wrap gap-4 px-10 justify-center'>
+                    <div className='mt-10 flex flex-wrap gap-4 px-10 justify-center object-center'>
                         {filteredImages.map((image, index) => (
                             <img
                                 key={index}
                                 src={image}
                                 alt={selectedSkill}
-                                className="md:w-24 md:h-24 w-14 h-14 object-cover rounded-md"
+                                className="md:w-auto md:h-32  w-14 h-14 object-contain rounded-md"
                             />
                         ))}
                     </div>

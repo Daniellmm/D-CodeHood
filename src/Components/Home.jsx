@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import CountUp from 'react-countup'
 
@@ -15,14 +16,24 @@ const Home = () => {
                 </div>
                 <div className='flex md:flex-row flex-col gap-7 pt-10'>
                     <div>
-                        <button className='btn-1 md:p-3 py-2 px-4 rounded-full bg-slate-100 font-semibold'>View Projects</button>
+                        <motion.button
+                            whileTap={{ scale: 0.8 }}
+                            whileHover={{scale: 1.1}}
+                            transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+                            className='btn-1 md:p-3 py-2 px-4 rounded-full bg-slate-100 font-semibold'>View Projects
+                        </motion.button>
                     </div>
                     <div>
-                        <button className='btn-2 md:p-3 py-2 px-5 rounded-full bg-slate-100 font-semibold'>Our services</button>
+                        <motion.button
+                            whileTap={{scale: 0.8 }}
+                            whileHover={{scale: 1.1}}
+                            transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+                            className='btn-2 md:p-3 py-2 px-5 rounded-full bg-slate-100 font-semibold'>Our services
+                        </motion.button>
                     </div>
                 </div>
 
-                <div className='flex mx-8 md:mx-0 lg:flex-row flex-wrap justify-center lg:px-0 items-center gap-10  pt-28 pb-10'>
+                <div className='flex mx-8 md:mx-0 lg:flex-row flex-wrap justify-center lg:px-0 items-center gap-10  pt-36 pb-10'>
                     <div className='h-[170px] box-1 text-lightText hover:text-white md:w-[350px] rounded-xl px-4 py-6'>
                         <div className='flex'>
                             <CountUp className='md:text-7xl text-5xl text-brightColor font-bold block text-white' end={4} duration={7} />
@@ -41,7 +52,7 @@ const Home = () => {
                             <p className='flex justify-end items-end text-4xl font-bold text-white'>+</p>
                             <p className='flex items-end font-bold text-2xl text-white'>Projects</p>
                         </div>
-                        <div  className='pt-2'>
+                        <div className='pt-2'>
                             <h1 className=' text-[16px]'>
                                 Achieving success through the completion of 6+ impactful projects.
                             </h1>
