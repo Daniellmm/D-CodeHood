@@ -12,7 +12,7 @@ const Testimonials = () => {
                     </div>
 
                     <div className='md:px-24 pt-20 flex flex-col md:flex-row justify-center items-center gap-8 mx-10 px-6'>
-                        <div className=' bg-white size-[350px] md:size-96 bg-opacity-10 bg-clip-padding blur-backdrop-filter shadow-box2 shadow-lg rounded-lg p-10 flex justify-center items-center text-white'>
+                        <div className=' bg-white size-[350px] md:size-96 bg-opacity-10 bg-clip-padding blur-backdrop-filter shadow-[#C9EBFF] shadow-lg rounded-lg p-10 flex justify-center items-center text-white'>
                             
                             <div>
                                 <div className='text-white font-bold text-5xl'>
@@ -22,7 +22,7 @@ const Testimonials = () => {
                                 <p className='flex justify-end pt-6 italic'>Idowu Daniel</p>
                             </div>
                         </div>
-                        <div className=' bg-white size-[350px] md:size-96 bg-opacity-10 bg-clip-padding blur-backdrop-filter shadow-box2 shadow-lg rounded-lg p-10 flex justify-center items-center text-white'>
+                        <div className=' bg-white size-[350px] md:size-96 bg-opacity-10 bg-clip-padding blur-backdrop-filter shadow-[#C9EBFF] shadow-lg rounded-lg p-10 flex justify-center items-center text-white'>
                             
                             <div>
                                 <div className='text-white font-bold text-5xl'>
@@ -32,7 +32,7 @@ const Testimonials = () => {
                                 <p className='flex justify-end pt-6 italic'>Idowu Daniel</p>
                             </div>
                         </div>
-                        <div className=' bg-white size-[350px] md:size-96 bg-opacity-10 bg-clip-padding blur-backdrop-filter shadow-box2 shadow-lg rounded-lg p-10 flex justify-center items-center text-white'>
+                        <div className=' bg-white size-[350px] md:size-96 bg-opacity-10 bg-clip-padding blur-backdrop-filter shadow-[#C9EBFF] shadow-lg rounded-lg p-10 flex justify-center items-center text-white'>
                             
                             <div>
                                 <div className='text-white font-bold text-5xl'>

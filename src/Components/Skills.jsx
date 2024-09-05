@@ -46,7 +46,7 @@ const Skills = () => {
     const filteredImages = skillsData.find(skill => skill.name === selectedSkill)?.images || [];
 
     return (
-        <div className="relative h-[550px]  overflow-hidden w-full bg-black  ">
+        <div id='skills' className="relative h-[550px]  overflow-hidden w-full bg-black  ">
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
             <div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div>
 
@@ -84,13 +84,13 @@ const Skills = () => {
                     </div>
 
 
-                    <div className='mt-10 flex flex-wrap gap-4 px-10 justify-center object-center'>
+                    <div className='mt-10  flex flex-wrap gap-4 px-10 justify-center object-center'>
                         {filteredImages.map((image, index) => (
                             <img
                                 key={index}
                                 src={image}
                                 alt={selectedSkill}
-                                className="md:w-auto md:h-32  w-14 h-14 object-contain rounded-md"
+                                className="md:w-fit md:h-24  w-14 h-14 object-contain rounded-md"
                             />
                         ))}
                     </div>

@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'poppins', sans-serif;
 }
@@ -18,6 +22,11 @@ body {
 .blur-backdrop-filter {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+
+}
+.blur-backdrop-filter-2 {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
 
 }
 
@@ -143,6 +152,56 @@ body {
 
 
 
+
+
+/* contact form */
+
+form {
+    max-width: 600px;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    border: 2px solid #394cf3;
+    
+
+}
+
+form .input-box .field{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #394cf3;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.input-box{
+    padding-top: 20px;
+}
+
+.input-box .field.mess{
+    height: 200px;
+    resize: none;
+}
+
+form button{
+    width: 100%;
+    height: 55px;
+    background: radial-gradient(108.75% 109.97% at 10% -6.74%, #394cf3 65%, #0f172a 100%), #1e293b;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+}
 
 
 

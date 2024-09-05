@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const AboutMe = () => {
     return (
-        <div className=' relative min-h-screen overflow-hidden px-11 border-white '>
+        <div id='about' className=' relative min-h-screen overflow-hidden px-11 border-white '>
             <div class="absolute inset-0 -z-10 h-full w-full bg-white  bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div></div>
             <div className='relative z-10 flex flex-col pt-20 md:px-28 justify-center items-center'>
                 
