@@ -57,98 +57,10 @@ body {
 }
 
 .btn-1{
-    background: radial-gradient(108.75% 109.97% at 10% -6.74%, #394cf3 65%, #0f172a 100%), #1e293b;
+    background: radial-gradient(108.75% 109.97% at 10% -6.74%, #394cf3 65%, #7497ff 100%), #1e293b;
         color: white;
 }
 
-.custom-shape-divider-top-1725454015 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    border: white;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1725454015 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1725454015 .shape-fill {
-    fill: #FFFFFF;
-}
-
-
-.custom-shape-divider-bottom-1725455523 {
-    position: absolute;    
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1725455523 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    
-}
-
-.custom-shape-divider-bottom-1725455523 .shape-fill {
-    fill: #FFFFFF;
-
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1725455523 svg {
-        width: calc(146% + 1.3px);
-        height: 140px;
-        
-    }
-}
-
-
-
-
-
-
-.custom-shape-divider-top-1725457474 {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-   
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1725457474 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1725457474 .shape-fill {
-    fill: #000;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-top-1725457474 svg {
-        width: calc(221% + 1.3px);
-        height: 154px;
-    }
-}
 
 
 

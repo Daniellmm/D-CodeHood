@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-scroll";
+// import { Link  } from "react-scroll";
 import '../Utilis/style.css'
+import Project from '../Pages/Project';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -15,74 +17,42 @@ const Navbar = () => {
     };
 
     return (
-        <div className="w-full z-50 fixed  bg-white bg-opacity-10 bg-clip-padding h-16 blur-backdrop-filter ">
-           
+        <nav>
 
-            <div className="flex justify-between items-center p-4 px-7 md:px-32 text-white">
-                <h1 className="btn-1 p-1 rounded-md text-xl font-bold  mix-blend-difference ">D-CodeHood</h1>
 
-                <div className="flex items-center btn-1 p-1 rounded-md mix-blend-difference">
-                    {menu ? (
-                        <AiOutlineClose size={25} onClick={handleChange} />
-                    ) : (
-                        <AiOutlineMenuUnfold size={25} onClick={handleChange} />
-                    )}
+            <div className="w-full z-50 fixed  bg-white bg-opacity-10 bg-clip-padding h-16 blur-backdrop-filter ">
+
+
+                <div className="flex justify-between items-center p-4 px-7 md:px-32 text-white">
+                    <h1 className="btn-1 p-1 rounded-md text-xl font-bold  mix-blend-difference ">D-CodeHood</h1>
+
+                    <div className="flex items-center btn-1 p-1 rounded-md mix-blend-difference">
+                        {menu ? (
+                            <AiOutlineClose size={25} onClick={handleChange} />
+                        ) : (
+                            <AiOutlineMenuUnfold size={25} onClick={handleChange} />
+                        )}
+                    </div>
+                </div>
+
+                <div className={`${menu ? "translate-x-0" : "-translate-x-full"} -inset-0 -z-10 justify-center items-center  flex flex-col lg:flex-col bg-slate-900 text-white font-semibold fixed lg:static left-0 top-20  px-5 text-left pt-8 pb-8 lg:pt-5 lg:pb-5 gap-8 w-full h-fit transition-transform duration-300 `}>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <Link
+                        to="project"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className="hover:text-brightColor transition-all cursor-pointer"
+                        onClick={closeMenu}
+                    >
+                        Projects
+                    </Link>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
-
-            <div className={`${menu ? "translate-x-0" : "-translate-x-full"} -inset-0 -z-10 justify-center items-center translate-y-10 flex flex-col lg:flex-col bg-slate-900 text-white font-semibold fixed lg:static left-0 top-20  px-5 text-left pt-8 pb-8 lg:pt-5 lg:pb-5 gap-8 w-full h-fit transition-transform duration-300 `}>
-                <Link
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                    onClick={closeMenu}
-                >
-                    Home
-                </Link>
-                <Link
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                    onClick={closeMenu}
-                >
-                    About
-                </Link>
-                <Link
-                    to="skills"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                    onClick={closeMenu}
-                >
-                    Skills
-                </Link>
-                <Link
-                    to="services"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                    onClick={closeMenu}
-                >
-                    Our Services
-                </Link>
-                <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                    onClick={closeMenu}
-                >
-                    Contact
-                </Link>
-            </div>
-        </div>
+        </nav>
     );
 };
 

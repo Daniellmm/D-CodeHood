@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react'
 import Swal from 'sweetalert2'
+import { fadeIn } from '../varients';
+import { motion } from 'framer-motion';
 
+const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 
 const Contact = () => {
 
-   
+
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -52,21 +55,43 @@ const Contact = () => {
 
             <div className='relative z-10 pt-16'>
                 <div className='flex flex-col justify-center items-center'>
-                    <div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        variants={fadeIn("down", .3)}>
                         <h1 className='text-4xl font-semibold'>Contact Us</h1>
-                    </div>
+                    </motion.div>
 
                     <div className='py-10 px-3 my-16 mx-3 md:w-3/5 bg-black bg-opacity-10 bg-clip-padding blur-backdrop-filter-2 rounded-md z-40'>
                         <div className='flex flex-col gap-10 items-center'>
 
                             <div className='flex gap-10 '>
-                                <div className='size-28 bg-box1'>
+                                <motion.div
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true }}
+                                    variants={fadeIn("right", .4)}
+                                    className='size-28 bg-box1'>
 
-                                </div>
-                                <div className='size-28 bg-box3'></div>
+                                </motion.div>
+                                <motion.div
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true }}
+                                    variants={fadeIn("left", .4)}
+                                    className='size-28 bg-box3'>
+
+                                </motion.div>
                             </div>
 
-                            <form onSubmit={onSubmit} className='w-[100%] mx-0 bg-transparent shadow-[#C9EBFF] shadow-2xl rounded-lg'>
+                            <motion.form 
+                            initial={{opacity: 0}}
+                            whileInView={{opacity: 1,}}
+                            transition={{ delay: 1.0, duration: 2 }}
+                            
+                            onSubmit={onSubmit} 
+                            className='w-[100%] mx-0 bg-transparent shadow-[#C9EBFF] shadow-2xl rounded-lg'>
                                 <div className='input-box'>
                                     <label>Full Name</label>
                                     <input type="text" className='field' placeholder='Enter your name' name='name' required />
@@ -81,7 +106,7 @@ const Contact = () => {
                                 </div>
 
                                 <button type='submit'>Send Message</button>
-                            </form>
+                            </motion.form>
 
                         </div>
                     </div>
